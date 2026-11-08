@@ -1,0 +1,110 @@
+/* 
+    Курс: Vibe Coding
+    Домашнее задание №2: Конструктор посещения события
+    Выполнил: Молчанов Константин
+    Группа: М26-555
+*/
+
+/* Скрываем элементы с атрибутом hidden */
+[hidden] {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стили карточки */
+.card {
+    width: 450px;
+    margin: 0 auto 30px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+/* Стили для блоков с ошибками */
+.error-box {
+    width: 410px;
+    margin: 0 auto 15px auto;
+    padding: 10px 20px;
+    color: #d9534f;
+    background-color: #fdf7f7;
+    border: 1px solid #d9534f;
+}
+
+/* Блок вывода результата */
+.result-box {
+    width: 410px;
+    margin: 0 auto 15px auto;
+    padding: 15px 20px;
+    color: #155724;
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+}
+
+/* Окно для JSON */
+.json-box {
+    width: 410px;
+    margin: 0 auto 15px auto;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    font-family: monospace;
+    word-break: break-all;
+}
+
+h1 {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+#show-program {
+    margin: 8px 0 16px 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#program {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border: 1px dashed #999999;
+    margin-bottom: 10px;
+}
+
+/* Стили формы */
+#service-form {
+    width: 450px;
+    margin: 0 auto 20px auto;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+#service-form h3 {
+    margin: 0 0 12px 0;
+}
+
+#service-form label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#service-form button[type="submit"] {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}

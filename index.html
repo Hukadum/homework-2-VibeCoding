@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Конструктор посещения события</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        Курс: Vibe Coding   
+        Домашнее задание №2: Конструктор посещения события
+        Выполнил: Молчанов Константин
+        Группа: М26-555
+    -->
+</head>
+
+<body>
+
+    <!-- Карточка события -->
+    <div class="card">
+        <h1 id="event-title"></h1>
+        <p id="event-date"></p>
+        <p id="event-place"></p>
+        <p id="event-description"></p>
+
+        <button id="show-program" type="button" hidden>Показать программу</button>
+        <div id="program" hidden></div>
+    </div>
+
+    <!-- Блок для вывода ошибки данных -->
+    <div id="data-error" class="error-box" hidden>Ошибка данных.</div>
+
+    <!-- Форма выбора услуг -->
+    <form id="service-form" hidden>
+        <h3>Выберите услуги:</h3>
+        <label>
+            <input type="checkbox" id="guide"> Экскурсия с гидом (500 руб.)
+        </label>
+        <label>
+            <input type="checkbox" id="audio"> Аудиогид (350 руб.)
+        </label>
+        <label>
+            <input type="checkbox" id="catalog"> Каталог выставки (250 руб.)
+        </label>
+        <button type="submit">Рассчитать стоимость</button>
+    </form>
+
+    <!-- Ошибка, если пользователь ничего не выбрал -->
+    <div id="choice-error" class="error-box" hidden>Выберите хотя бы одну услугу.</div>
+
+    <!-- Блоки для вывода результатов расчетов -->
+    <div id="result" class="result-box" hidden></div>
+    <div id="report-json" class="json-box" hidden></div>
+
+    <!-- Подключение скрипта -->
+    <script src="app.js"></script>
+</body>
+
+</html>
